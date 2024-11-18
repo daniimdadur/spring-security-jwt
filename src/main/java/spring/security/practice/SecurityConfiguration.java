@@ -40,7 +40,6 @@ public class SecurityConfiguration {
                 })
                 .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
                 .addFilterBefore(this.jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-                //
                 .build();
     }
 
